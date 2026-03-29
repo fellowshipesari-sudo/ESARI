@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESARI 2026</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+/* --- RESET --- */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {background: radial-gradient(circle at center, #e9f7ef 0%, #d4f0e1 100%); font-family:'Lora', serif; color:#1f3d2f; line-height:1.8; font-size:1.1rem; overflow-x:hidden;}
+
+/* --- CONTAINER --- */
+.container {max-width:950px; margin:3rem auto; padding:0 1.5rem; position:relative; z-index:1;}
+
+/* --- LOGO --- */
+.logo {display:flex; justify-content:center; margin-bottom:2rem;}
+.logo img {height:180px; width:auto; object-fit:contain; border:3px solid #cfe5d3; border-radius:12px; padding:8px; box-shadow:0 10px 30px rgba(0,0,0,0.15);}
+
+/* --- BADGE --- */
+.badge {
+  position:relative;
+  width:160px;
+  height:160px;
+  margin:0 auto 2rem;
+  border-radius:50%;
+  background: radial-gradient(circle at top left, #ffd700, #f4c430);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  color:#1f3d2f;
+  font-family:'Playfair Display', serif;
+  font-weight:bold;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  animation: badgeGlow 1.5s ease-in-out infinite alternate;
+}
+.badge-text {margin-top:0.5rem; font-size:1.1rem;}
+
+/* Badge glow animation */
+@keyframes badgeGlow {
+  0% {box-shadow:0 10px 25px rgba(255,215,0,0.4);}
+  50% {box-shadow:0 20px 40px rgba(255,215,0,0.7);}
+  100% {box-shadow:0 10px 25px rgba(255,215,0,0.4);}
+}
+
+/* Sparkles */
+.sparkle {
+  position:absolute;
+  width:6px;
+  height:6px;
+  background:white;
+  border-radius:50%;
+  opacity:0.8;
+  animation: sparkleAnim 1.5s linear infinite;
+}
+@keyframes sparkleAnim {
+  0% {transform: translateY(0) translateX(0) scale(1);}
+  50% {transform: translateY(-20px) translateX(15px) scale(0.8);}
+  100% {transform: translateY(0) translateX(0) scale(1);}
+}
+
+/* --- LETTER CARD --- */
+.letter-card {
+    background:#f4fff8;
+    border-radius:16px;
+    padding:3rem 3rem;
+    box-shadow:0 25px 60px rgba(0,0,0,0.15);
+    position:relative;
+    z-index:1;
+    border-left: 6px solid #3d6d51;
+    animation: floatCard 2s ease-in-out infinite alternate;
+}
+
+/* Letter floating animation */
+@keyframes floatCard {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-8px);}
+}
+
+/* --- HEADINGS --- */
+h1,h2,h3 {font-family:'Playfair Display', serif; color:#1f3d2f;}
+h1 {font-size:3rem; margin-bottom:1.5rem; text-align:center; letter-spacing:1px;}
+h2 {font-size:2rem; margin:2rem 0 1rem;}
+h3 {font-size:1.4rem; margin:1.5rem 0 .7rem;}
+p, li {margin:0.8rem 0;}
+ul {margin-left:1.8rem; list-style-type: disc;}
+hr {border:none; border-top:1px solid #cfe5d3; margin:2rem 0;}
+
+/* --- HIGHLIGHT --- */
+.highlight {font-weight:bold; color:#3d6d51;}
+
+/* --- DECORATIVE LINE --- */
+.decorative-line {
+    height:4px;
+    width:80px;
+    background:#3d6d51;
+    margin:1.5rem auto 2rem;
+    border-radius:2px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="esari.png" alt="ESARI Logo">
+    </div>
+
+
+
+    <!-- LETTER CARD -->
+    <div class="letter-card">
+        <h1>Congratulations!</h1>
+        <div class="decorative-line"></div>
+
+        <p><strong>Dear ESARI Applicant,</strong></p>
+        <p>Thank you for your interest in joining ESARI. After reviewing your application, we are very pleased to inform you that you have been selected for the <b>Summer 2026 Cohort</b>, our first official group of participants.</p>
+        <p>Please read this entire page carefully. It contains important information about the program and your next steps.</p>
+        <hr>
+
+        <h2>About the 2026 Cohort</h2>
+        <p>This year marks the beginning of ESARI, a student-led research and innovation initiative created to bring together motivated students, early researchers, and young innovators. Your application demonstrated the curiosity, dedication, and potential we look for in our team members.</p>
+        <p>After gathering feedback from students and educators—and carefully considering the academic schedules of applicants—we have officially decided to begin the first cohort in <span class="highlight">August 2026</span>. By then, most students will have completed school & exams, allowing everyone to engage fully without academic pressure.</p>
+        <p>This start date also gives our team time to finalize:</p>
+        <ul>
+            <li>Research tracks and project frameworks</li>
+            <li>Team structures and role assignments</li>
+            <li>Training materials and onboarding resources</li>
+            <li>Program operations and communication channels</li>
+        </ul>
+        <p>Your acceptance guarantees your place in the Summer 2026 Cohort. Until the program begins, you are considered <b>an admitted member.</b></p>
+        <hr>
+
+        <h2>What Happens Next</h2>
+        <p>In the coming months, you will receive:</p>
+        <ul>
+            <li>A detailed program calendar</li>
+            <li>Your assigned research group</li>
+            <li>Access to the ESARI Resource Hub</li>
+            <li>Orientation guidelines</li>
+            <li>Invitations to optional pre-summer webinars</li>
+        </ul>
+        <p>You are <strong>not</strong> required to begin any activities until August, though occasional updates or forms may be sent before then.</p>
+        <hr>
+
+        <h2>Document Verification</h2>
+        <p>Some applicants submitted certificates, awards, or supporting documents. Please note the following:</p>
+        <ul>
+            <li>All accepted participants are recommended to complete document verification.</li>
+            <li>If you already submitted documents, they are recorded and will be reviewed.</li>
+            <li>If you have not yet sent any documents, you may submit them until <span class="highlight">June 10, 2026</span>.</li>
+            <li>ESARI may verify the authenticity of any document submitted during or after acceptance.</li>
+            <li>Verification may include contacting organizations, institutions, or supervisors listed on your documents.</li>
+            <li>If any document is found to be inaccurate, altered, or unverifiable, ESARI reserves the right to <b>revoke admission</b> or <b>adjust your role</b> in the program.</li>
+            <li>Additional documents may be requested before team assignments begin</li>
+        </ul>
+        <hr>
+
+        <h2>What ESARI Aims to Build</h2>
+        <p>ESARI was created to give students meaningful exposure to academic research, critical thinking, digital collaboration, and real-world problem-solving.</p>
+        <p>Our vision is to create a space where young people can:</p>
+        <ul>
+            <li>Explore emerging fields</li>
+            <li>Develop analytical and technical skills</li>
+            <li>Participate in team-based projects</li>
+            <li>Work in environments aligned with global standards</li>
+            <li>Contribute to work with real academic and practical value</li>
+        </ul>
+        <p>As part of our first cohort, you are joining us at an important moment. Your group will help set the culture and direction of ESARI for future participants.</p>
+        <hr>
+
+        <h2>Moving Forward</h2>
+        <p>Over the coming months, our team will:</p>
+        <ul>
+            <li>Finalize research tracks</li>
+            <li>Complete curriculum development</li>
+            <li>Prepare participant training</li>
+            <li>Organize team structures</li>
+            <li>Assign roles and responsibilities</li>
+            <li>Set communication channels</li>
+            <li>Prepare the onboarding package</li>
+        </ul>
+        <p>Please expect your <strong>Official Onboarding Email</strong> closer to the program start date.</p>
+        <hr>
+
+        <h2>What ESARI Stands For</h2>
+        <p>ESARI — the Ethiopian Student Association for Research & Innovation — is founded on four core pillars:</p>
+        <ul>
+            <li>Research literacy</li>
+            <li>Collaboration</li>
+            <li>Innovation & problem-solving</li>
+            <li>Leadership development</li>
+        </ul>
+        <p>Our goal is to build a generation of young scholars capable of producing impactful research and creative solutions on both national and global levels.</p>
+        <p>As part of this cohort, you will engage in academic writing, research design, teamwork, and innovation-focused tasks. You’ll also contribute to projects that reflect real-world issues and opportunities.</p>
+
+        <h2>Congratulations once again!</h2>
+        <p>You are joining ESARI as one of our trailblazers — the students who will help shape everything this initiative becomes. Being part of the first cohort means you’re not just participating in a program; you’re helping build it. The decisions we make together, the standards we set, and the projects we launch will guide every future researcher who joins ESARI.</p>
+        <p>Your curiosity, commitment, and willingness to take part in something new place you at the forefront of this journey. We’re genuinely excited to see what this founding group will accomplish and how each member will contribute to ESARI’s early identity and long-term impact.</p>
+        <p>We are excited to welcome you to the ESARI 2026 Summer Cohort and look forward to working with you.</p>
+        <p><strong>Kind regards,</strong><br>
+        <strong>ESARI fellowship Admissions Team</strong><br>
+
+        <h3>Questions?</h3>  
+
+   <p>Contact us at:</p> 
+    <p>📧 <a href="mailto:fellowship.esari@gmail.com">fellowship.esari@gmail.com</a></p>  
+
+ <h5><p><em>Responses may take 2–5 business days.</em></p></h5>
+    </div>
+</div>
+
+<!-- --- SPARKLES & MUSIC --- -->
+<audio id="jingle" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg" autoplay></audio>
+
+<script>
+// Sparkle generator
+const badge = document.getElementById('badge');
+let sparkles = [];
+for(let i=0;i<20;i++){
+    let s = document.createElement('div');
+    s.classList.add('sparkle');
+    s.style.left = Math.random()*badge.offsetWidth+'px';
+    s.style.top = Math.random()*badge.offsetHeight+'px';
+    s.style.animationDelay = Math.random()*1.5+'s';
+    badge.appendChild(s);
+    sparkles.push(s);
+}
+
+// Stop animations and music after 15 seconds
+setTimeout(()=>{
+    // stop badge glow
+    badge.style.animation = 'none';
+    // remove sparkles
+    sparkles.forEach(s=>s.remove());
+    // stop floating card
+    document.querySelector('.letter-card').style.animation = 'none';
+    // stop music
+    document.getElementById('jingle').pause();
+},15000);
+</script>
+
+</body>
+</html>
